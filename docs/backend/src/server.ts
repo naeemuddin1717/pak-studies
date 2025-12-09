@@ -61,9 +61,13 @@ loadChapters();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://pak-studies.vercel.app",
+    ],
   })
 );
+
 
 app.use(express.json());
 
